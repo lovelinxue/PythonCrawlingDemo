@@ -27,8 +27,6 @@ for row in range(len(titleList)):
 tableValues = [['张学友', 15201062100, 18, '测试数据！'], ['李雷', 15201062598, 19, '测试数据！'],['Marry', 15201062191, 28, '测试数据！']]
 
 for row in range(len(tableValues)):
-    # ws1.append(tableValues[row])
-
     print tableValues[row]
 
 
