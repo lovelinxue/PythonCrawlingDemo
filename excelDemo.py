@@ -32,13 +32,11 @@ for row in range(len(tableValues)):
     print tableValues[row]
 
 
+ws2 = wb.create_sheet(title='Pi') #新建一个表
+ws2['F5'] = 3.14 #给固定位置赋值
 
+ws3 = wb.create_sheet(title='Data')#设置表名
 
-# ws2 = wb.create_sheet(title='Pi') #新建一个表
-# ws2['F5'] = 3.14 #给固定位置赋值
-
-# ws3 = wb.create_sheet(title='Data')#设置表名
-#
 # for row in range(1, 20):
 #     for col in range(1, 20):
 #         _ = ws3.cell(column=col, row = row, value = '{0}'.format(get_column_letter(col)))
