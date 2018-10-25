@@ -1,4 +1,12 @@
-# -*-coding:utf-8-*-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+爬取应届生求职网信息的一个小demo,在博主的基础上新增了将数据写入Excel文件中
+源代码地址:https://blog.csdn.net/markleacode/article/details/65639947
+"""
+__author__ = 'LoveLinXue.com'
+
 
 import urllib2
 import sys
