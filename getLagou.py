@@ -7,7 +7,7 @@
 """
 __author__ = 'LoveLinXue'
 
-import re, requests, json, sys
+import requests, json, sys, time
 
 print sys.version
 
@@ -52,7 +52,8 @@ while num < 100:
     if n > 0:
         html = html["result"]
         for i in html:
-            dianhua = i['lastLogin']
+            createTime = i['createTime']
+            otherStyleTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['lastLogin']) / 1000))
             xueli = i['education']
             gongzi = i['salary']
             gongsimingcheng = i['companyFullName']
@@ -60,7 +61,8 @@ while num < 100:
             gongzuo = i['positionName']
             chengshi = i['city']
             bar += 1
-            print '城市: %s -- 公司名称: %s -- 学历要求: %s -- 工作: %s -- 工资: %s -- 福利: %s -- 联系电话: %s' % (chengshi, gongsimingcheng, xueli, gongzuo, gongzi, fuli, dianhua)
+            print '发布时间: %s -- \n城市: %s -- \n公司名称: %s -- \n学历要求: %s -- \n工作: %s -- \n工资: %s -- \n福利: %s -- \n最后登录时间: ' \
+                  '%s \n\n' % (createTime, chengshi, gongsimingcheng, xueli, gongzuo, gongzi, fuli, otherStyleTime)
     else:
         print '成功爬取 %s 条招聘信息' %bar
         break
