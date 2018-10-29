@@ -4,8 +4,8 @@
 """
 Display document description information
 编译环境: Python3.7
-
-
+QQ空间批量点赞
+源代码地址:https://www.52pojie.cn/forum.php?mod=viewthread&tid=809228&extra=page%3D1%26filter%3Dauthor%26orderby%3Ddateline
 """
 __author__ = 'LoveLinXue.com'
 
